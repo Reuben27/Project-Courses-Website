@@ -19,6 +19,21 @@ $('.filter-electrical').on('click',function(){
     }
 });
 
+$('.filter-computer').on('click',function(){
+    //var $text = $(this).text();
+    //console.log($text);
+    if($(this).hasClass( 'selected' )){
+        userList.filter();
+        $(this).removeClass('selected');
+    } 
+    else {
+        userList.filter(function(item) {
+            return (item.values().Branch == "Branch: Computer Science and Engineering");
+        });
+        $(this).addClass('selected');
+    }
+});
+
 $('.filter-chemical').on('click',function(){
     //var $text = $(this).text();
     //console.log($text);
@@ -59,6 +74,21 @@ $('.filter-mechanical').on('click',function(){
     else {
         userList.filter(function(item) {
             return (item.values().Branch == "Branch: Mechanical Engineering");
+        });
+        $(this).addClass('selected');
+    }
+});
+
+$('.filter-material').on('click',function(){
+    //var $text = $(this).text();
+    //console.log($text);
+    if($(this).hasClass( 'selected' )){
+        userList.filter();
+        $(this).removeClass('selected');
+    } 
+    else {
+        userList.filter(function(item) {
+            return (item.values().Branch == "Branch: Materials Science and Engineering");
         });
         $(this).addClass('selected');
     }
