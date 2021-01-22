@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({ extended: true }));
-const port = 3000;
 
 const {OAuth2Client} = require('google-auth-library');
 const CLIENT_ID = '473236609433-bsunp8lbeannucdc8m0om4ueph6iaue6.apps.googleusercontent.com';
@@ -112,6 +111,6 @@ function checkAuthenticated(req, res, next){
     })
 }
 
-app.listen(port, function (){
+app.listen(process.env.PORT || 3000, function (){
     console.log("Server running");
 });
