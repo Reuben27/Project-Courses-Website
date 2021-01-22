@@ -8,7 +8,7 @@ app.use(express.static("public"))
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const {OAuth2Client} = require('google-auth-library');
-const CLIENT_ID = '473236609433-bsunp8lbeannucdc8m0om4ueph6iaue6.apps.googleusercontent.com';
+const CLIENT_ID = '473236609433-9gom3rgoo2h0iacdpqo5e9hqt6hqa00k.apps.googleusercontent.com';
 const client = new OAuth2Client(CLIENT_ID);
 
 app.set ("view engine", "ejs");
