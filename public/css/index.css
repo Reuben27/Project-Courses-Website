@@ -51,6 +51,7 @@ li{
     display: inline-block;
 }
 
-.footer {
-    background-color: #ffffff;
-}
+#footer-icon {
+    color: #007bff !important;
+    /*color: #8E793E !important;*/
+  }
