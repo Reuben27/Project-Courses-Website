@@ -43,3 +43,12 @@ ul {
 li{
     margin-bottom: 10px;
 }
+
+#filter-buttons {
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.footer {
+    background-color: #ffffff;
+}

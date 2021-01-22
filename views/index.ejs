@@ -24,9 +24,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/logout"><b>Logout</b></a>
                 </li>
                 </ul>
@@ -43,13 +40,17 @@
     <br>
     <div class = "container" id = "users">
         <div class = "row" id = "functionality-fields">
-            <input class = "search" placeholder = "Search"/>
-            <button class = "filter-chemical input-group-text">Chemical Engineering</button>
-            <button class = "filter-civil input-group-text">Civil Engineering</button>
-            <button class = "filter-electrical input-group-text">Electrical Engineering</button>
-            <button class = "filter-mechanical input-group-text">Mechanical Engineering</button>
-            <button class = "filter-computer input-group-text">Computer Science & Engineering</button>
-            <button class = "filter-material input-group-text">Materials Science & Engineering</button>
+            <div class="col d-flex justify-content-end">
+            <input class = "search m-2" placeholder = " Search"/>
+            </div>
+            <div class=" container row justify-content-md-center">
+            <button class = "filter-chemical input-group-text m-2" id="filter-buttons">Chemical Engineering</button>
+            <button class = "filter-civil input-group-text m-2" id="filter-buttons">Civil Engineering</button>
+            <button class = "filter-electrical input-group-text m-2" id="filter-buttons">Electrical Engineering</button>
+            <button class = "filter-mechanical input-group-text m-2" id="filter-buttons">Mechanical Engineering</button>
+            <button class = "filter-computer input-group-text m-2" id="filter-buttons">Computer Science & Engineering</button>
+            <button class = "filter-material input-group-text m-2" id="filter-buttons">Materials Science & Engineering</button>
+        </div>
         </div> 
 
         <br>      
@@ -72,6 +73,12 @@
             </li>
             <% }); %>
         </ul>      
+    </div>
+    <!--Footer-->
+    <div class="footer sticky-bottom">
+        <div class="container mb-2">
+            <span class="text-muted">Website developed by Reuben Devanesan and Aditya Shekhar.</span>
+        </div>
     </div>
     </div>  
     <!--Scripts-->
