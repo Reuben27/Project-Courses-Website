@@ -54,4 +54,10 @@ li{
 #footer-icon {
     color: #007bff !important;
     /*color: #8E793E !important;*/
+    opacity: 0.7;
+    transition: 0.5s;
   }
+
+#footer-icon:hover{
+    opacity: 1;
+}
