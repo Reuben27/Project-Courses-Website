@@ -80,6 +80,7 @@ app.get("/", checkAuthenticated, async (req,res) => {
     //database = [{"name": "Reuben"}, {"name": "Aditya"}];
     //console.log(database);
     database = JSON.parse(JSON.stringify(database));
+    console.log(database);
     res.render("index", {database: database});
 });
 

@@ -61,3 +61,7 @@ li{
 #footer-icon:hover{
     opacity: 1;
 }
+
+h5, h6{
+    text-align: left !important;
+}

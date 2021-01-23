@@ -235,3 +235,15 @@ $('.filter-material').on('click',function(){
         }
     }
 });
+
+function modaler(topic, brief, supervisor, discipline, email){
+    //console.log(text1);
+    //console.log(text2);
+    bodytext = "<h6> Project Brief: </h6>" + brief + "<br><br> <h6>Supervisor: </h6> " + supervisor + "<br><br> <h6>Discipline: </h6>" + discipline + "<br><br> <h6>Email: </h6>" + "<a href = mailto:" + email + ">" + email + "</a>";
+    $('#exampleModalLabel').html(topic);
+    $('#heyyya').html(bodytext);
+    
+    //document.getElementById('exampleModalLabel').innerHTML = text1;
+    //document.getElementById('heyyya').innerHTML = text2; 
+    console.log("Hey");
+}
