@@ -68,7 +68,12 @@
                             <p class = "Branch">Branch: <%=  database[i].Branch %></p>
                             <p class = "PCC">Project Course Code: <%=  database[i].PCC %></p>
                         </div>
-                        <a href = "#" class = "btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick = "getElementById('heyyya').innerHTML='<%= database[i].brief %>'; getElementById('exampleModalLabel').innerHTML='<%= database[i].Projecttopic %>'">Know More</a>
+                        <a href = "#" 
+                          class = "btn btn-primary" 
+                          data-toggle="modal" 
+                          data-target="#exampleModal" 
+                          onclick = "getElementById('heyyya').innerHTML='<%= database[i].brief %>'; 
+                                    getElementById('exampleModalLabel').innerHTML='<%= database[i].Projecttopic %>'">Know More</a>
                     </div>
                 </div>
             </li>
