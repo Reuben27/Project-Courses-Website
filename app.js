@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//Google Authentication Library
 const {OAuth2Client} = require('google-auth-library');
 const CLIENT_ID = '473236609433-9gom3rgoo2h0iacdpqo5e9hqt6hqa00k.apps.googleusercontent.com';
 const client = new OAuth2Client(CLIENT_ID);
@@ -77,10 +78,8 @@ app.post("/login", (req,res) => {
 
 app.get("/", checkAuthenticated, async (req,res) => {
     var database = await accessSpreadsheet();
-    //database = [{"name": "Reuben"}, {"name": "Aditya"}];
-    //console.log(database);
     database = JSON.parse(JSON.stringify(database));
-    console.log(database);
+    //console.log(database);
     res.render("index", {database: database});
 });
 

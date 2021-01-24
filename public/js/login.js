@@ -13,9 +13,10 @@ function onSignIn(googleUser) {
     xhr.send(JSON.stringify({token: id_token}));
 }
 
+//Function to sign out the user.
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
-    console.log('User signed out.');
+    //console.log('User signed out.');
     });
 }

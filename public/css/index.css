@@ -44,6 +44,10 @@ li{
     margin-bottom: 10px;
 }
 
+button, input{
+    outline: none !important;
+}
+
 #filter-buttons {
     border-radius: 20px;
     background-color: rgb(233, 236, 239); 
@@ -52,16 +56,19 @@ li{
 }
 
 #footer-icon {
-    color: #007bff !important;
-    /*color: #8E793E !important;*/
-    opacity: 0.7;
+    color: rgb(12, 15, 170)!important;
     transition: 0.5s;
   }
 
 #footer-icon:hover{
-    opacity: 1;
+    color: #007bff !important;
 }
 
 h5, h6{
     text-align: left !important;
+}
+
+button.selected{
+    background-color: #007bff !important;
+    color: #fff !important;
 }
