@@ -1,3 +1,4 @@
+//Class names of the filters are given as options
 var options = {
     valueNames: [ 'Projecttopic', 'Supername' , 'Name', 'Branch', 'PCC' ]
 };
@@ -165,7 +166,8 @@ function modaler(topic, brief, supervisor, discipline, email){
 }
 
 //Function to filter the content
-function filterer(){
+function filterer(filter){
+    //filter is the filter for which you want the function to run
     for(j = 0; j < 6; j++){
         if(filterarray[j] === '<filter-name>'){
             console.log('Hey <filter>!')

@@ -21,6 +21,7 @@ const { promisify } = require('util');
 
 const creds = require('./client_secret.json');
 
+//Asynchronous Function to get the data from the google spreadsheet in Json format.
 async function accessSpreadsheet(){    
     const doc = new GoogleSpreadsheet('1wK6xv92DiMobXxDvHLEYssk9D-BTqKz471GFEe5K9Rc');
     await doc.useServiceAccountAuth(creds);
@@ -88,6 +89,7 @@ app.get('/logout', (req, res)=>{
     res.redirect('/login');
 })
 
+//Function to check whether the user is authenticated or not.
 function checkAuthenticated(req, res, next){
     let token = req.cookies['session-token'];
     let user = {};
