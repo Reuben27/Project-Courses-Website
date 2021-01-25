@@ -154,8 +154,12 @@ $('.filter-material').on('click',function(){
 
 //Function to display content on the clicked modal.
 function modaler(topic, brief, supervisor, discipline, email){
-    bodytext = "<h6> Project Brief: </h6>" + brief + "<br><br> <h6>Supervisor: </h6> " + supervisor + "<br><br> <h6>Discipline: </h6>" + discipline + "<br><br> <h6>Academic Year: </h6> 2017-2018" + "<br><br> <h6>Email: </h6>" + "<a href = mailto:" + email + ">" + email + "</a>";
+    bodytext =  "<h6> Project Brief: </h6>" + brief;
+    bodytext += "<br><br> <h6>Supervisor: </h6> " + supervisor  ;
+    bodytext += "<br><br> <h6>Discipline: </h6>" + discipline ;
+    bodytext += "<br><br> <h6>Academic Year: </h6> Fall, 2020-21";
+    bodytext += "<br><br> <h6>Email: </h6>" + "<a href = mailto:" + email + ">" + email + "</a>";
     $('#exampleModalLabel').html(topic);
-    $('#heyyya').html(bodytext);
+    $('#boddy').html(bodytext);
     console.log("Hey-Modal!");
 }

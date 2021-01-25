@@ -25,7 +25,7 @@ async function accessSpreadsheet(){
     const doc = new GoogleSpreadsheet('1wK6xv92DiMobXxDvHLEYssk9D-BTqKz471GFEe5K9Rc');
     await doc.useServiceAccountAuth(creds);
     await doc.loadInfo();
-    const sheet = doc.sheetsByIndex[0];
+    const sheet = doc.sheetsByIndex[1];
     //console.log(`Title: ${sheet.title}, Rows: ${sheet.rowCount}`);
 
     var rows = await sheet.getRows();
