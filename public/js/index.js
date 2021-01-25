@@ -163,3 +163,17 @@ function modaler(topic, brief, supervisor, discipline, email){
     $('#boddy').html(bodytext);
     console.log("Hey-Modal!");
 }
+
+//Function to filter the content
+function filterer(){
+    for(j = 0; j < 6; j++){
+        if(filterarray[j] === '<filter-name>'){
+            console.log('Hey <filter>!')
+        }
+        else{
+            if($(filterarray[j]).hasClass( 'selected' )){
+                $(filterarray[j]).removeClass('selected');
+            }
+        }
+    }
+}
