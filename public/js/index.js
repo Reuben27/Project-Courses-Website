@@ -179,3 +179,31 @@ function filterer(filter){
         }
     }
 }
+
+//Accesing the Google Spreadsheet.
+/*async function accessSpreadsheet(){    
+    const doc = new GoogleSpreadsheet('1wK6xv92DiMobXxDvHLEYssk9D-BTqKz471GFEe5K9Rc');
+    await doc.useServiceAccountAuth(creds);
+    await doc.loadInfo();
+    const sheet = doc.sheetsByIndex[1];
+    //console.log(`Title: ${sheet.title}, Rows: ${sheet.rowCount}`);
+
+    var rows = await sheet.getRows();
+    rows = rows.map(a => a._rawData);
+    var headerRow = sheet.headerValues;
+
+    var database = [];
+    for (let i = 0; i < rows.length; i++) {
+        let firstArray = rows[i];
+        let secondArray = headerRow;
+        let arrayOfObject = secondArray.map(function (value, index) {
+        return [value, firstArray[index]]
+        });
+        let obj = Object.fromEntries(arrayOfObject);
+        database.push(obj);
+    }
+
+    //console.log(database);
+    return database;
+}
+*/
