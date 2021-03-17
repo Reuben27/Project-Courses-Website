@@ -1,6 +1,6 @@
 # Project-Courses-Website
-Repository for the code of the Project Courses Website
+Website to showcase the project courses undertaken by students at IITGN during an academic year.
 
-Currently hosted using Heroku: [https://boiling-escarpment-25803.herokuapp.com/](https://boiling-escarpment-25803.herokuapp.com/)
+Currently hosted using Cpanel: [https://students.iitgn.ac.in/student-acad-council/project-courses/](https://students.iitgn.ac.in/student-acad-council/project-courses/)
 
-Website developed using HTML, CSS, JavaScript, JQuery, Node.js, Google Apis
+Website developed using Node.js and Google Apis.
