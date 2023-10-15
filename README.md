@@ -4,7 +4,7 @@ Website to showcase the project courses undertaken by students at IITGN during a
 
 ## Getting Started
 
-- Ensure that you have Node and npminstalled on your laptop. Run the following commands to check the versions of flutter and dart installed.
+- Ensure that you have Node and npm installed on your laptop. Run the following commands to check the versions of node and npm installed.
 ```
 node --version
 npm --version
@@ -25,7 +25,7 @@ npm install
 
 - Run the application and you can then view it on your browser. [http://localhost:3000](http://localhost:3000)
 ```
-node app.js 
+npm run dev
 ```
 
 ## Source Code Structure
